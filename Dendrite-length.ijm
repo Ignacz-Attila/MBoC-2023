@@ -17,7 +17,7 @@ Savedfile = replace(CurrentFile,".tif","");
 rename("original");
 
 run("Select None");
-run("Remove Overlay");
+run("Remove Overlay");	// Be careful to check the file path of the projectfile name below!
 
 run("Run Autocontext Prediction", "projectfilename=[D:\\actin labeling comparison\\actin-Ilastik models\\Dendrite Ilastik model\\Ilastik_dendrite.ilp] inputimage=original autocontextpredictiontype=Segmentation");
 rename("Result");
